@@ -414,21 +414,21 @@ button.primary {
   border-radius: 4px;
 }
 
-.company:hover {
-  fill: var(--accent);
-  border: solid var(--accent);
-}
-
-.company .icon:hover {
-  fill: var(--accent);
-  border-color: var(--accent);
-}
-
 .company .icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
 }
+
+.company:hover .icon {
+  fill: var(--accent);
+  border: solid var(--accent);
+}
+
+/* .company .icon:hover {
+  fill: var(--accent);
+  border-color: var(--accent);
+} */
 
 /* Footer */
 .footer {
@@ -457,9 +457,12 @@ button.primary {
   text-transform: uppercase;
 }
 
+.footer-group {
+  display: inline-block;
+}
 .footer-groups {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .join {
@@ -472,7 +475,7 @@ button.primary {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.icon-field .icon {
+.icon-field.bottom {
   fill: var(--primary-white-color);
 }
 .bottom-link:not(:last-child) {
