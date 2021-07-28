@@ -115,7 +115,8 @@ img {
 }
 
 .auth-nav .top {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: inherit;
@@ -125,6 +126,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.auth-nav .icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .auth-nav .top:hover,
 .auth-nav .top:focus,
 .auth-nav.bottom:hover,
@@ -258,6 +265,22 @@ button.primary {
   font-size: 14px;
   line-height: 1.71;
 }
+
+.icons-advantages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: var(--secondary-background-color);
+}
+
+.icon-advantage {
+  width: 70px;
+  height: 70px;
+}
+
 /* Third section */
 
 .work-pics {
@@ -317,6 +340,42 @@ button.primary {
   font-size: 16px;
   line-height: 1.18;
 }
+
+.icons-team {
+  display: inline-flex;
+}
+
+.network-field {
+  display: flex;
+  margin-top: 16px;
+}
+
+.icons-team:not(:last-child) {
+  margin-right: 10px;
+}
+
+.network-link {
+  fill: #afb1b8;
+}
+.network-link:hover {
+  border-radius: 50%;
+  background-color: var(--accent);
+  fill: var(--primary-white-color);
+}
+
+.icon-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.icons-team .icon {
+  width: 20px;
+  height: 20px;
+}
+
 /* Footer */
 .footer {
   background-color: var(--tertiary-background-color);
