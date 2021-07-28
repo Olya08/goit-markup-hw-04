@@ -378,25 +378,6 @@ button.primary {
 }
 
 /* Clients */
-/* 
-.clients-companies {
-  display: flex;
-}
-.clients-company:not(:last-child) {
-  margin-right: 30px;
-}
-.company-field {
-  width: 170px;
-  padding: 16px 32px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
-
-.company-field > .icon {
-  fill: #afb1b8;
-  width: 106px;
-  height: 60px;
-} */
 
 .clients-companies {
   display: flex;
@@ -405,11 +386,8 @@ button.primary {
   margin-right: 30px;
 }
 .company {
-  display: flex;
-  width: 170px;
-  height: 92px;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -419,16 +397,13 @@ button.primary {
   height: 60px;
   fill: #afb1b8;
 }
+.company:hover {
+  border-color: var(--accent);
+}
 
 .company:hover .icon {
   fill: var(--accent);
-  border: solid var(--accent);
 }
-
-/* .company .icon:hover {
-  fill: var(--accent);
-  border-color: var(--accent);
-} */
 
 /* Footer */
 .footer {
