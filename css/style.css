@@ -70,7 +70,7 @@ img {
   color: var(--primary-white-color);
 }
 .logo-bottom {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 }
 .logo-bottom-name {
@@ -218,7 +218,7 @@ button.primary {
 .section-activity {
   padding-bottom: 94px;
 }
-/* Преимущества */
+/* Advantages */
 
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -281,7 +281,7 @@ button.primary {
   height: 70px;
 }
 
-/* Third section */
+/* Our-work */
 
 .work-pics {
   display: flex;
@@ -290,12 +290,13 @@ button.primary {
   margin-left: 30px;
 }
 
-/* Fourth section */
+/* Team */
 .team {
   background-color: var(--secondary-background-color);
 }
 
-.team-name {
+.team-name,
+.clients .title {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--secondary-text-color);
@@ -367,13 +368,66 @@ button.primary {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
   width: 44px;
   height: 44px;
 }
-.icons-team .icon {
+.icons-team .icon,
+.bottom-link .icon {
   width: 20px;
   height: 20px;
+}
+
+/* Clients */
+/* 
+.clients-companies {
+  display: flex;
+}
+.clients-company:not(:last-child) {
+  margin-right: 30px;
+}
+.company-field {
+  width: 170px;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.company-field > .icon {
+  fill: #afb1b8;
+  width: 106px;
+  height: 60px;
+} */
+
+.clients-companies {
+  display: flex;
+}
+.clients-company:not(:last-child) {
+  margin-right: 30px;
+}
+.company {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.company:hover {
+  fill: var(--accent);
+  border: solid var(--accent);
+}
+
+.company .icon:hover {
+  fill: var(--accent);
+  border-color: var(--accent);
+}
+
+.company .icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
 }
 
 /* Footer */
@@ -392,6 +446,41 @@ button.primary {
   line-height: 1.71;
 }
 
+.join .title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-groups {
+  display: flex;
+  align-items: flex-start;
+}
+
+.join {
+  margin-left: 70px;
+}
+.bottom-links {
+  display: flex;
+}
+.bottom-link {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.icon-field .icon {
+  fill: var(--primary-white-color);
+}
+.bottom-link:not(:last-child) {
+  margin-right: 10px;
+}
+.twitter {
+  background-color: var(--accent);
+}
 /* Стили для portfolio.html */
 
 .button.active {
