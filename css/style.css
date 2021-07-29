@@ -8,6 +8,7 @@
   --secondary-background-color: #f5f4fa;
   --tertiary-background-color: #2f303a;
   --bottom-link-color: rgba(255, 255, 255, 0.6);
+  --icons-color: #afb1b8;
 }
 
 .list {
@@ -45,6 +46,12 @@ img {
 
 .section-header {
   border-bottom: 1px solid #ececec;
+}
+
+.section-header.first-page {
+  border-bottom: 1px solid #ececec;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /* Logo */
@@ -171,7 +178,7 @@ img {
 }
 
 .overlay {
-  max-width: 1600px;
+  width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -355,7 +362,7 @@ button.primary {
 }
 
 .icons-team {
-  display: inline-flex;
+  display: flex;
 }
 
 .network-field {
@@ -368,7 +375,7 @@ button.primary {
 }
 
 .network-link {
-  fill: #afb1b8;
+  fill: var(--icons-color);
 }
 .network-link:hover {
   border-radius: 50%;
@@ -400,14 +407,14 @@ button.primary {
 .company {
   display: block;
   padding: 16px 32px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icons-color);
   border-radius: 4px;
 }
 
 .company .icon {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
+  fill: var(--icons-color);
 }
 .company:hover {
   border-color: var(--accent);
