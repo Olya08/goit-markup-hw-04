@@ -44,7 +44,7 @@ img {
 }
 
 .section-header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 /* Logo */
@@ -170,6 +170,16 @@ img {
   text-transform: uppercase;
 }
 
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg-image.jpg);
+  background-size: cover;
+}
+
 /* Button */
 .button {
   display: inline-block;
@@ -204,6 +214,8 @@ button.primary {
 .button.secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .pointer {
   cursor: pointer;
@@ -492,6 +504,11 @@ button.primary {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.portfolio .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio .title {
